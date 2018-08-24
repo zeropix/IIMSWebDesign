@@ -1,12 +1,29 @@
+<?php include('dbConfig.php'); ?>
+    <?php
+    if(isset($_POST['register']))
+    {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $contact = $_POST['contact'];
+        $institute = $_POST['institute'];
+        echo " $name ,$email, $contact, $institute";
+        $sql = "INSERT INTO user" . "(name,email,contact,institute) 
+        VALUES ('$name','$email','$contact','$institute')";
+        #VALUES ('xyz','nk@iimshillong.ac.in','9876543210','iims')";
+        
+        
+        
+        echo $sql;
+        $result = mysqli_query($conn,$sql);
+        if(!$result) {
+            echo "did not insert". mysql_error();
+        }
+        echo "inserted";
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Evento -Event Html Template">
-    <meta name="keywords" content="Evento , Event , Html, Template">
-    <meta name="author" content="ColorLib">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
     <title> Khlurthma</title>
     <!-- ========== Favicon Ico ========== -->
@@ -85,7 +102,7 @@
 
         <div class="breadcrumbs">
             <ul>
-                <li><a href="#">Home</a>  |   </li>
+                <li><a href="index.html">Home</a>  |   </li>
                 <li><span>Registration</span></li>
             </ul>
         </div>
@@ -100,25 +117,16 @@
 
             <div class="col-md-6 col-12">
                     <div class="contact_form">
-                            <?php include('dbConfig.php'); ?>
-                            <?php
-                            if(isset($_POST['register']))
-                            {
-                                $sql = "INSERT INTO user (name,email,contact,institute)
-                                VALUES ('nk','ek@gmail.com','9876543210','iims')";
                             
-                                $result = mysqli_query($conn,$sql);
-                            }
-                            ?>
-                        <form>
+                        <form action="#" method="POST">
                         <div class="form-group">
                             <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email">
+                            <input type="text" name="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="contact" class="form-control" placeholder="Contact">
+                            <input type="text" name="contact" class="form-control" placeholder="Contact">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" name="institute"  placeholder="Institute"></textarea>
@@ -131,31 +139,6 @@
                 </div> 
     </div>
 </section>
-<!--event section end -->
-
-
-
-<!--get tickets section -->
-<!-- <section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
-    <div class="container">
-        <div class="section_title mb30">
-            <h3 class="title color-light">
-                Get your tickets
-            </h3>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9 text-md-left text-center color-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-            </div>
-            <div class="col-md-3 text-md-right text-center">
-                <a href="#" class="btn btn-primary btn-rounded mt30">buy now</a>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!--get tickets section end-->
-
-<!--footer start -->
 <footer>
     <div class="container">
         <div class="row justify-content-center">
@@ -172,18 +155,12 @@
                                     Khlur-thma is the annual Interschool business fest of IIM Shillong, register today to interact with the brightest minds of the country in one place. <br>Like share and subscribe.</p>
                                 
                         <ul class="footer_social">
-                            <!-- <li>
-                                <a href="#"><i class="ion-social-pinterest"></i></a>
-                            </li> -->
                             <li>
                                 <a href="#"><i class="ion-social-facebook"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="ion-social-twitter"></i></a>
                             </li>
-                            <!-- <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li> -->
                             <li>
                                 <a href="#"><i class="ion-social-instagram"></i></a>
                             </li>
@@ -235,33 +212,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            subscribe to our newsletter
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <div class="newsletter_form">
-                            <input type="email" class="form-control" placeholder="E-Mail here">
-                            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </footer>
-<div class="copyright_footer">
+<!-- <div class="copyright_footer">
     <div class="container">
         <div class="row justify-content-center">
-            <!-- <div class="col-md-6 col-12">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
-            </div> -->
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
                     <li>
@@ -283,7 +239,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--footer end -->
 
 <!-- jquery -->

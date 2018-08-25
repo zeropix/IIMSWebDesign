@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Evento -Event Html Template">
-    <meta name="keywords" content="Evento , Event , Html, Template">
-    <meta name="author" content="ColorLib">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- ========== Title ========== -->
     <title> Khlurthma-Events</title>
     <!-- ========== Favicon Ico ========== -->
@@ -31,45 +26,14 @@
     <div class="loader-outter"></div>
     <div class="loader-inner"></div>
 </div>
-
+<script> 
+        $(function(){
+            $("#include_header").load("header.html");
+        $("#include_footer").load("footer.html"); 
+        });
+</script>
 <!--header start here -->
-<header class="header navbar fixed-top navbar-expand-md">
-    <div class="container">
-        <a class="navbar-brand logo" href="index.html">
-            <img src="assets/img/iimslogo.png" height=80px alt="Khlur-thma"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-text-align-right"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
-            <ul class=" nav navbar-nav menu">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="speakers.html">Speakers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="events.html">Events</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link " href="news.html">News</a>
-                </li> -->
-                <li class="nav-item">
-                        <a class="nav-link " href="register.html">Register</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                </li>
-                <li class="search_btn">
-                    <a  href="#">
-                        <i class="ion-ios-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
+<div id="include_header"></div>
 <!--header end here-->
 
 <!--page title section-->
@@ -102,111 +66,171 @@
     <div class="container">
 
         <div class="event_box">
-            <!-- <img src="assets/img/events/event1.png" alt="event"> -->
-            <h1> Image </h1>
             <div class="event_info">
                 <div class="event_title">
-                    Stock Shock and DelFINus
+                        Just Bid It
                 </div>
-                <!-- <div class="speakers">
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div> -->
                 <div class="event_date">
-                    October 26th, 2018
+                    October 26th, 2018 <br>
+                    EVENT DOMAIN: IT & Systems Competition
                 </div>
             </div>
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                        The event which brings out the cricket analyst in you and provides you the opportunity to don the hat of a bidder. But as the saying goes, with great
+                        power comes great responsibility. You need to carefully manage your budget and strategise accordingly to create
+                        the best possible team which will give your opponents a run for their money. If you think you have what it takes to
+                        combines your love for the game along with the shrewd strategising skills, this event is a must for you.
                     </div>
-                    <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                    <div class="col-md-6 col-12 padding=0px event_info event_date">
+                        <!-- <div class="event_date"> -->
+                        TEAM SIZE: 3<br>TIMELINE:<br>Round 1: Online Round <br>Round 2: On Campus Round<br>
+                        EVENT LOCATION: IIM Shillong<br>
+                        <a class="readmore_btn" href="register.php">Register here</a>
+                    <!-- </div> -->
                     </div>
                 </div>
             </div>
             <!-- <a href="#" class="readmore_btn">read more</a> -->
         </div>
-
         <div class="event_box">
-            <!-- <img src="assets/img/events/event2.png" alt="event"> -->
-            <h1> Image </h1>
+                <div class="event_info">
+                    <div class="event_title">
+                        Corona
+                    </div>
+                    <div class="event_date">
+                        October 26th, 2018<br>
+                        EVENT DOMAIN: Consulting
+                    </div>
+                </div>
+                <div class="event_word">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-12"> 
+                                The event will consist of two rounds. The first round will be online round where the
+                                participants will be provided with the case to solve. The Second Round will be campus round where top 5 teams will
+                                be invited to IIM Shillong. <br>
+                                EVENT GUIDELINES and ELIGIBILITY:<br>
+                                 - Open to all National B-school students and Post Graduates<br>
+                                 - Team size-2<br>
+                                 - Team may comprise of 1st year/ 2nd year students or both<br>
+                                 - No limit on the number of teams that can participate from a single institute<br>
+                                 - No student from an institute can be part of more than one team<br>
+                                 - One team cannot have members from different Institutes<br>
+                            </div>
+                        <div class="col-md-6 col-12">
+                                TIMELINE:<br>
+                                1st round- Online submission<br>
+                                2nd round- Shillong on 10th to 11th November<br>
+                                CONTACT DETAILS: conquest@iimshillong.ac.in<br>
+                                Harsh: 9923666638 | Kushagra: 9999532305<br>
+                                <a class="readmore_btn" href="register.php">Register here</a>
+                            </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="readmore_btn">read more</a> -->
+            </div>
+        
+        <div class="event_box">
             <div class="event_info">
                 <div class="event_title">
                     EcoMania
                 </div>
-                <!-- <div class="speakers">
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div> -->
                 <div class="event_date">
                     October 26th, 2018
+                    EVENT DOMAIN: Eco-biz
                 </div>
             </div>
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            The event will consist of two rounds. The first round will be online round where the
+                            participants will be provided with the case to solve. The Second Round will be campus round where top 5 teams will
+                            be invited to IIM Shillong.<br>
+                            EVENT GUIDELINES & ELIGIBILITY:<br>
+                            - Open to all National B-school students and Post Graduates<br>
+                            - Team size-2<br>
+                            - Team may comprise of 1st year/ 2nd year students or both<br>
+                            - No limit on the number of teams that can participate from a single institute<br>
+                            - No student from an institute can be part of more than one team<br>
+                            - One team cannot have members from different Institutes<br>
+                           </div>
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            TIMELINE:<br>
+                            1st round- Online submission<br>
+                            2nd round- Shillong on 10th to 11th November<br>
+                            <a class="readmore_btn" href="register.php">Register here</a>
+                            </div>
                 </div>
             </div>
             <!-- <a href="#" class="readmore_btn">read more</a> -->
         </div>
 
         <div class="event_box">
-            <!-- <img src="assets/img/events/event3.png" alt="event"> -->
-            <h1> Image </h1>
             <div class="event_info">
                 <h5 class="event_title">
-                    Shrinkhala
+                    Touchstone
                 </h5>
-                <!-- <div class="speakers">
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div> -->
                 <div class="event_date">
-                    October 26th, 2018
+                    October 26th, 2018<br>
+                    EVENT DOMAIN: Marketing
                 </div>
             </div>
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            You will be tested on your traditional marketing acumen and how you apply those concepts to solve the business problem.<br>
+                            EVENT GUIDELINES & ELIGIBILITY:<br>
+                            - Register in teams of two from the same campus<br>
+                            - No person can be a member of more than one team<br>
+                            - The teams have to provide the details of their solution in a 6-slide (excluding cover and ‘thank you’) submission<br>
+                            - The submissions have to be mailed to the email – id :<br>
+                            markathon.iims@gmail.com<br>
+                            - The shortlisted teams will get a chance to present at the IIM Shillong campus during Khlur-Thma<br>
+                            </div>
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            TIMELINE:<br>
+                            Registrations : October 13-20, 2017<br>
+                            Problem floated : October 20, 2017<br>
+                            Submission Date : October 25, 2017<br>
+                            Final Presentation : November 10-11<br>
+                            <a class="readmore_btn" href="register.php">Register here</a>
+                        </div>
                 </div>
             </div>
             <!-- <a href="#" class="readmore_btn">read more</a> -->
         </div>
         <div class="event_box">
-            <!-- <img src="assets/img/events/event3.png" alt="event"> -->
-            <h1> Image </h1>
             <div class="event_info">
                 <h5 class="event_title">
-                    Just Bid It
+                    DelFINus
                 </h5>
-                <!-- <div class="speakers">
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div> -->
                 <div class="event_date">
-                    October 26th, 2018
+                    October 26th, 2018<br>
+                    EVENT DOMAIN: Finance
                 </div>
             </div>
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            Your financial acumen & the ability to apply those concepts in practical scenario <br>                       will be tested on multiple fronts.
+                            EVENT GUIDELINES & ELIGIBILITY:<br>
+                            - Register in teams of Two<br>
+                            - Team members must be from the same campus<br>
+                            - An individual cannot be a member of more than one team<br>
+                            OTHER DETAILS:<br>
+                            - Accommodation and Food would be provided<br>
+                            - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
+                        </div>
                     <div class="col-md-6 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                    </div>
+                            TIMELINE:<br>
+                            Registrations : October 13-20, 2017<br>
+                            Online Quiz : October 14, 2017<br>
+                            Case Submission : TBD<br>
+                            Final Presentation : November 10-11<br>
+                            <a class="readmore_btn" href="register.php">Register here</a>
+                        </div>
+                            
                 </div>
             </div>
             <!-- <a href="#" class="readmore_btn">read more</a> -->
@@ -214,158 +238,9 @@
     </div>
 </section>
 <!--event section end -->
-
-
-
-<!--get tickets section -->
-<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
-    <div class="container">
-        <div class="section_title mb30">
-            <h3 class="title color-light">
-                Get your tickets
-            </h3>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9 text-md-left text-center color-light">
-                Register today if you want to interact with the birghtest minds in the country!
-            </div>
-            <div class="col-md-3 text-md-right text-center">
-                <a href="register.html" class="btn btn-primary btn-rounded mt30">Buy now</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--get tickets section end-->
-
 <!--footer start -->
-<footer>
-    <div class="container">
-        <div class="row justify-content-center">
 
-            <div class="col-md-4 col-12">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <div class="footer_logo">
-                            <img src="assets/img/iimslogo.png" height=80px alt="Khlur-thma">
-                        </div>
-                    </div>
-                    <div class="footer_box_body">
-                            <p>
-                                    Khlur-thma is the annual Interschool business fest of IIM Shillong, register today to interact with the brightest minds of the country in one place. <br>Like share and subscribe.</p>
-                                
-                        <ul class="footer_social">
-                            <!-- <li>
-                                <a href="#"><i class="ion-social-pinterest"></i></a>
-                            </li> -->
-                            <li>
-                                <a href="#"><i class="ion-social-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-twitter"></i></a>
-                            </li>
-                            <!-- <li>
-                                <a href="#"><i class="ion-social-dribbble"></i></a>
-                            </li> -->
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            Instagram
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <ul class="instagram_list">
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            subscribe to our newsletter
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <div class="newsletter_form">
-                            <input type="email" class="form-control" placeholder="E-Mail here">
-                            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-</footer>
-<div class="copyright_footer">
-    <div class="container">
-        <div class="row justify-content-center">
-            <!-- <div class="col-md-6 col-12">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
-            </div> -->
-            <div class="col-12 col-md-6 ">
-                <ul class="footer_menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <!-- <li>
-                        <a href="#">News</a>
-                    </li> -->
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<div id="include_footer"></div>
 <!--footer end -->
 
 <!-- jquery -->

@@ -1,29 +1,58 @@
 <?php include('dbConfig.php'); ?>
     <?php
+    $nameErr =$emailErr=$contactErr =$instituteErr = $formError="";
+    $name=$email=$contact=$institute="";
     if(isset($_POST['register']))
     {
-        $name = $_POST['name'];
+        $name =$_POST['name'];
         $email = $_POST['email'];
         $contact = $_POST['contact'];
         $institute = $_POST['institute'];
-        echo " $name ,$email, $contact, $institute";
+        $required="Required field";
         $sql = "INSERT INTO user" . "(name,email,contact,institute) 
         VALUES ('$name','$email','$contact','$institute')";
         #VALUES ('xyz','nk@iimshillong.ac.in','9876543210','iims')";
-        
-        
-        
-        echo $sql;
-        $result = mysqli_query($conn,$sql);
-        if(!$result) {
-            echo "did not insert". mysql_error();
+        if(!$name) {
+            $nameErr=$required;
+        } else{
+            if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                $nameErr = "Only letters and white space allowed"; 
+            }
         }
-        echo "inserted";
+        if(!$email) {
+            $emailErr=$required;
+        }else {
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email";
+            }
+        }
+        if(!$contact) {
+            $contactErr=$required;
+        } else {
+            if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{10}$/", $contact)) {
+                $contactErr = "Enter valid contact number";
+            }
+        }
+        if(!$institute) {
+            $instituteErr=$required;
+        }
+        
+        if(!$emailErr && !$nameErr && !$contactErr && !$instituteErr) {
+            echo $sql;
+            $result = mysqli_query($conn,$sql);
+            if(!$result) {
+                echo "did not insert". mysql_error();
+            }
+            echo "inserted";
+        } else {
+            $formError= "Fill all the details correctly";
+        }
     }
     ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- ========== Title ========== -->
     <title> Khlurthma</title>
     <!-- ========== Favicon Ico ========== -->
@@ -70,7 +99,7 @@
                     <a class="nav-link " href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link " href="register.html">Register</a>
+                        <a class="nav-link " href="register.php">Register</a>
                     </li>
                 <li class="nav-item">
                     <a class="nav-link " href="contact.html">Contact</a>
@@ -115,28 +144,31 @@
 <section class="pt100 pb100">
     <div class="container">
 
-            <div class="col-md-6 col-12">
-                    <div class="contact_form">
-                            
-                        <form action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="contact" class="form-control" placeholder="Contact">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="institute"  placeholder="Institute"></textarea>
-                        </div>
-                        <div class="form-group text-right">
-                            <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register"></input>
-                        </div>
-                    </form>
-                    </div>
-                </div> 
+        <div class="col-md-6 col-12">
+            <div class="contact_form">
+                <span class="error"><?php echo $formError;?></span>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+                <div class="form-group">
+                <span class="error"><?php echo $nameErr;?></span>
+                    <input type="text" name="name"  class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                <span class="error"><?php echo $emailErr;?></span>
+                    <input type="text" name="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <span class="error"><?php echo $contactErr;?></span>
+                    <input type="text" name="contact" class="form-control" placeholder="Contact">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="institute"  placeholder="Institute"></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register"></input>
+                </div>
+            </form>
+            </div>
+        </div> 
     </div>
 </section>
 <footer>
@@ -215,33 +247,6 @@
         </div>
     </div>
 </footer>
-<!-- <div class="copyright_footer">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 ">
-                <ul class="footer_menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!--footer end -->
-
 <!-- jquery -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- bootstrap -->

@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <!--counter css-->
+    	<!-- Stylesheets -->	
+	<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+		
+	<link href="01-comming-soon/css/styles.css" rel="stylesheet">
+	
+	<link href="01-comming-soon/css/responsive.css" rel="stylesheet">
 </head>
 <body>
 <div class="loader">
@@ -32,13 +39,22 @@
         $("#include_footer").load("footer.html"); 
         });
 </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--header start here -->
 <div id="include_header"></div>
 <!--header end here-->
 
 <!--cover section slider -->
 <section id="home" class="home-cover">
-    <div class="cover_slider owl-carousel owl-theme">
+    <div id ="home_carousel" data-ride="carousel">
+    <div class="cover_slider owl-carousel owl-theme" >
         <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
              <div class="slider_content">
                 <div class="slider-content-inner">
@@ -51,7 +67,7 @@
                             <p class="cover-date">
                                 26th-27th October 2018  - IIM Shillong.
                             </p>
-                            <a href="register.php" class=" btn btn-primary btn-rounded" >
+                            <a href="events.php" class=" btn btn-primary btn-rounded" >
                                 Register Now
                             </a>
                         </div>
@@ -59,29 +75,31 @@
                 </div>
             </div>
         </div>
-        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+        <div class="cover_item" style="background: url('assets/img/bg/slider3.png');">
             <div class="slider_content">
                 <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-left">
-                            <h2 class="cover-title">
-                                Prepare yourself for
-                            </h2>
-                            <strong class="cover-xl-text">Khlur-thma</strong>
+                            <h1 class="cover-title">
+                                War of the stars is here....
+                            </h1>
+                            <!-- <strong class="cover-xl-text">Khlur-thma</strong>
                             <p class="cover-date">
                                 26th-27th October 2018  - IIM Shillong.
-                            </p>
-                            <a href="register.php" class=" btn btn-primary btn-rounded" >
-                                Register today
+                            </p> -->
+                            <p><br></p>
+                            <a href="archive.html" class=" btn btn-primary btn-rounded" >
+                                Khlur-thma '17
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+        <div class="cover_item">                      
             <div class="slider_content">
-                <div class="slider-content-inner">
+                    <video loop muted autoplay src="assets/video/khlurthma17.mp4"> </video>
+                <!-- <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-center">
                             <h2 class="cover-title">
@@ -91,27 +109,28 @@
                             <p class="cover-date">
                                 26th-27th October 2018  - IIM Shillong
                             </p>
-                            <a href="register.php" class=" btn btn-primary btn-rounded" >
+                            <a href="events.php" class=" btn btn-primary btn-rounded" >
                                     Register today
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <div class="cover_nav">
-        <ul class="cover_dots">
-            <li class="active" data="0"><span>1</span></li>
-            <li  data="1"><span>2</span></li>
-            <li  data="2"><span>3</span></li>
-        </ul>
+        <ol class="cover_dots">
+            <li data-target="#home_carousel" class="active" data-slide-to="0"><span>1</span></li>
+            <li  data-target="#home_carousel" data-slide-to="1"><span>2</span></li>
+            <li  data-target="#home_carousel" data-slide-to="2"><span>3</span></li>
+        </ol>
     </div>
+</div>
 </section>
 <!--cover section slider end -->
 
 <!--event info -->
-<section class="pt100 pb100">
+<!-- <section class="pt100 pb100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-6 col-md-3  ">
@@ -136,7 +155,7 @@
                             Location
                         </h5>
                         <p>
-                            IIM Shillong.
+                            IIM Shillong
                         </p>
                     </div>
                 </div>
@@ -147,34 +166,18 @@
                     <i class="ion-ios-person-outline"></i>
                     <div class="content">
                         <h5 class="box_title">
-                            speakers
+                            Competitions
                         </h5>
                         <p>
-                            Coming soon..
+                           
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--event info end -->
-
-
-<!--event countdown -->
-<section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/bg-img.png');">
-    <div class="overlay_dark"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <h4 class="mb30 text-center color-light">Counter until the big event</h4>
-                <div class="countdown"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--event count down end-->
-
 
 <!--about the event -->
 <section class="pt100 pb100">
@@ -187,13 +190,24 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p>
-                    ‘Khlurthma’ in the local Khasi language of Meghalaya means “War of Stars” and true to its theme of ‘vying for glory’ it features the best of B school participants battling for the top spot. Khlurthma, the annual Interschool business fest of IIM Shillong, is held in the months of October- November. The event sees a confluence of participants with a flair and aptitude to solve real life business problems, fortified with a plethora of events catering to diverse fields of management.
+                    'Khlurthma' in the local Khasi language of Meghalaya means "War of Stars" and true to its theme of 'vying for glory' it features the best of B school participants battling for the top spot. The annual Interschool business fest of IIM Shillong, it is held in the months of October- November. The event sees a confluence of participants with a flair and aptitude to solve real life business problems, fortified with a plethora of events catering to diverse fields of management.
+                   <br> We host highly competitive events that challenge the inventiveness, ingenuity and business intelligence of the students and the event continues to be one of the most awaited B school fests across campuses in India. Khlurthma 2017 was inaugurated by the Director of the institute with a plantation drive, keeping in accordance with the emphasis the institute lays on sustainable development along with business practices. All the events feature multiple rounds of online and on campus evaluation, with the competitions being judged by the cream of industry professionals and academicians. The event attracts strong participation and endorsement from student and sponsors fraternity alike.
+                
                 </p>
             </div>
             <div class="col-12 col-md-6">
-                <p>
+                <!-- <p>
                     Khlurthma hosts highly competitive events that challenge the inventiveness, ingenuity and business intelligence of the students and the event continues to be one of the most awaited B school fests across campuses in India. Khlurthma 2017 was inaugurated by the Director of the institute with a plantation drive, keeping in accordance with the emphasis the institute lays on sustainable development along with business practices. All the events feature multiple rounds of online and on campus evaluation, with the competitions being judged by the cream of industry professionals and academicians. The event attracts strong participation and endorsement from student and sponsors fraternity alike.
-                </p>
+                </p> -->
+                <article>
+                    <div class="fb-page" data-href="https://www.facebook.com/khlurthma.iimshillong/" data-tabs="timeline" data-width="400" data-height="400"
+                        data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/khlurthma.iimshillong/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/khlurthma.iimshillong/">Khlurthma- War of the stars</a></blockquote>
+                    </div>
+                    <!-- <footer>
+                                    <a href="#" class="button special">More</a>
+                                </footer> -->
+                </article>
             </div>
         </div>
 
@@ -240,9 +254,66 @@
 </section>
 <!--about the event end -->
 
+<!--event countdown -->
+<section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/slider.png');">
+    <div class="overlay_dark"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h4 class="mb30 text-center color-light">Counter until the big event</h4>
+                <div class="countdown-base"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray pt100">
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+                khlurthma '17
+            </h3>
+        </div>
+        <div>
+            <iframe width="320" height="200" 
+            src="https://www.youtube.com/embed/GT2faBdWvA0">
+        </iframe>
+        <div style="width: 50%; float: right" class="brand_carousel owl-carousel">
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b1.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b2.png" alt="brand">
+                </div>
+    
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b3.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b4.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b5.png" alt="brand">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="bg-img pt70 pb70" height="150" style="background-color: black;">
+    <div class="display-table center-text">
+        <div class="display-table-cell">
+            <div id="rounded-countdown">
+                <div class="countdown" data-remaining-sec="416158"></div>
+            </div>
+            
+        </div> display-table-cell
+    </div> main-area
+	</div>
+</section> -->
+<!--event count down end-->
 
 <!--speaker section-->
-<section class="pb100">
+<!-- <section class="pb100">
     <div class="container">
         <div class="section_title mb50">
             <h3 class="title">
@@ -253,7 +324,7 @@
     <div class="row justify-content-center no-gutters">
 
         <h2>Coming soon...</h2>
-        <!-- <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6">
             <div class="speaker_box">
                 <div class="speaker_img">
                     <img src="assets/img/speakers/s1.png" alt="speaker name">
@@ -341,16 +412,16 @@
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
     </div>
-</section>
+</section> -->
 
 <!--brands section -->
 <section class="bg-gray pt100 pb100">
     <div class="container">
         <div class="section_title mb50">
             <h3 class="title">
-                our partners
+                previous associations
             </h3>
         </div>
         <div class="brand_carousel owl-carousel">
@@ -371,6 +442,10 @@
                 <img src="assets/img/brands/b5.png" alt="brand">
             </div>
         </div>
+        
+            <div  >
+        <a style="color: #f50136;font-size: 12px !important;font-weight: 700 !important;" href="register.php">Click here to associate with us</a></div>
+   
     </div>
 </section>
 <!--brands section end-->
@@ -378,7 +453,17 @@
 
 <div id="include_footer"></div>
 <!--footer end -->
-
+<div class="copyright_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jquery -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- bootstrap -->
@@ -397,5 +482,10 @@
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<!-- counter js-->
+<script src="common-js/jquery.classycountdown.js"></script>
+<script src="common-js/jquery.knob.js"></script>
+<script src="common-js/jquery.throttle.js"></script>
+<script src="common-js/scripts.js"></script>
 </body>
 </html>

@@ -58,15 +58,15 @@ $(document).ready(function() {
         time: 3000
     });
 
-    $(".countdown")
+    $(".countdown-base")
         .countdown("2018/10/26", function(event) {
             $(this).html(
-                event.strftime('<div>%w <span>Weeks</span></div>  <div>%d <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
+                event.strftime('<div>%D <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
             );
         });
 
     /* ==============================================
-     SLIDER
+     SLIDER <div>%w <span>Weeks</span></div>  
      =============================================== */
     $(".cover_slider").owlCarousel({
         loop:true,

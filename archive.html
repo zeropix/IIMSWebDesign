@@ -33,6 +33,36 @@
         $("#include_footer").load("footer.html"); 
         });
 </script>
+<script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1} 
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active";
+}
+    </script>
 <!--header start here -->
 <div id="include_header"></div>
 <!--header end here-->
@@ -69,8 +99,11 @@
             <!--blog section start -->
             <div class="col-12 col-md-8">
                 <div class="blog_card">
-                    <img src="assets/img/blog/blog1.png" alt="blog News ">
-                    <div class="blog_box_data">
+                    <!-- <img src="assets/img/blog/blog1.png" alt="blog News "> -->
+                    <iframe width="700" height="400"
+                    src="https://www.youtube.com/embed/GT2faBdWvA0">
+                </iframe>
+                    <!-- <div class="blog_box_data">
                         <span class="blog_date">
                             Dec 08, 2017
                         </span>
@@ -84,29 +117,44 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
                         </p>
                         <a href="#" class="readmore_btn">Read More</a>
-                    </div>
+                    </div> -->
                 </div>
+        <div class="blog_card mySlides fade">
+                <img src="assets/img/blog/blog1.png">
+        <!-- <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+         
+          <div class="text">Caption Text</div> -->
+      <!--
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/img/blog/blog2.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/img/blog/blog3.png" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div> -->
 
-                <div class="blog_card">
-                    <img src="assets/img/blog/blog2.png" alt="blog News ">
+                    <!-- <img src="assets/img/blog/blog2.png" alt="blog News ">
                     <div class="blog_box_data">
-                        <span class="blog_date">
-                            Dec 08, 2017
-                        </span>
-                        <div class="blog_meta">
-                            <span><a href="#">By Lore Papp</a></span>  | <span><a href="#">  in Business   </a></span>|  <span><a href="#">3 Comments</a></span>
-                        </div>
-                        <h5>
-                            Why you should invest your money into a good business
-                        </h5>
-                        <p class="blog_word">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                        </p>
                         <a href="#" class="readmore_btn">Read More</a>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="blog_card">
+                <!-- <div class="blog_card">
                     <img src="assets/img/blog/blog3.png" alt="blog News ">
                     <div class="blog_box_data">
                         <span class="blog_date">
@@ -123,17 +171,17 @@
                         </p>
                         <a href="#" class="readmore_btn">Read More</a>
                     </div>
-                </div>
+                </div> -->
 
 
                 <!--pagenition menu-->
-                <div class="mt70 mb70">
+                <!-- <div class="mt70 mb70">
                     <ul class="nav_menu">
                         <li class="active"><span>01</span></li>
                         <li><a href="#">02</a></li>
                         <li><a href="#">03</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <!--pageintion -->
 
             </div>
@@ -256,7 +304,17 @@
 
 <div id="include_footer"></div>
 <!--footer end -->
-
+<div class="copyright_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jquery -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- bootstrap -->

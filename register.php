@@ -1,17 +1,38 @@
 <?php include('dbConfig.php'); ?>
     <?php
-    $nameErr =$emailErr=$contactErr =$instituteErr = $formError="";
-    $name=$email=$contact=$institute="";
+    $nameErr =$emailErr=$contactErr =$instituteErr = "";
+    $name=$email=$contact=$institute=$event="";
+    $formError="";
+    $query="";
+    if($_GET['event']) {
+        $query=$_GET['event'];
+    }
+    // if($_GET['event']=="justbidit") {
+    //     $event="Just Bid It";
+    // } else 
+    if ($_GET['event']=="corona") {
+        $event="Corona";
+    } else if ($_GET['event']=="touchstone") {
+        $event="Touch Stone";
+    } else if ($_GET['event']=="delfinus") {
+        $event="DelFINus";
+    } else if($_GET['event']=="ecomania") {
+        $event="Eco Mania";
+    }
     if(isset($_POST['register']))
     {
         $name =$_POST['name'];
         $email = $_POST['email'];
         $contact = $_POST['contact'];
         $institute = $_POST['institute'];
+        $name2 =$_POST['name2'];
+        $email2 = $_POST['email2'];
+        $contact2 = $_POST['contact2'];
         $required="Required field";
-        $sql = "INSERT INTO user" . "(name,email,contact,institute) 
-        VALUES ('$name','$email','$contact','$institute')";
-        #VALUES ('xyz','nk@iimshillong.ac.in','9876543210','iims')";
+        $sql = "INSERT INTO $query (name1,email1,contact1,name2,email2,contact2,institute) 
+        VALUES ('$name','$email','$contact','$name2','$email2','$contact2','$institute')";
+
+        #echo $sql;
         if(!$name) {
             $nameErr=$required;
         } else{
@@ -38,12 +59,12 @@
         }
         
         if(!$emailErr && !$nameErr && !$contactErr && !$instituteErr) {
-            echo $sql;
+            #echo $sql;
             $result = mysqli_query($conn,$sql);
             if(!$result) {
-                echo "did not insert". mysql_error();
+                #echo "did not insert". mysql_error();
             }
-            echo "inserted";
+            $formError="You have registered successfully";
         } else {
             $formError= "Fill all the details correctly";
         }
@@ -78,41 +99,14 @@
     <div class="loader-inner"></div>
 </div>
 
+<script> 
+        $(function(){
+            $("#include_header").load("header.html");
+            $("#include_footer").load("footer.html"); 
+        });
+</script>
 <!--header start here -->
-<header class="header navbar fixed-top navbar-expand-md">
-    <div class="container">
-        <a class="navbar-brand logo" href="#">
-            <img src="assets/img/iimslogo.png" height=80px alt="Khlur-thma"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-text-align-right"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
-            <ul class=" nav navbar-nav menu">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="speakers.html">Speakers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link " href="register.php">Register</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                </li>
-                <li class="search_btn">
-                    <a  href="#">
-                        <i class="ion-ios-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
+<div id=include_header></div>
 <!--header end here-->
 
 <!--page title section-->
@@ -123,7 +117,7 @@
             <div class="col-12">
                 <div class="inner_cover_content">
                     <h3>
-                       Register Today
+                    <?php echo $event;?>- Registration
                     </h3>
                 </div>
             </div>
@@ -146,107 +140,58 @@
 
         <div class="col-md-6 col-12">
             <div class="contact_form">
-                <span class="error"><?php echo $formError;?></span>
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+                <span class="error" style="color:#f50136"><strong><?php echo $formError;?></strong></span>
+                <form action="<?php $event= $query;?>" method="POST">
                 <div class="form-group">
-                <span class="error"><?php echo $nameErr;?></span>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="institute"  placeholder="Full name of the institute, city"></textarea>
+                </div>
+                <h4>Participant 1</h4>
+                <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
                     <input type="text" name="name"  class="form-control" placeholder="Name">
                 </div>
                 <div class="form-group">
-                <span class="error"><?php echo $emailErr;?></span>
+                <span class="error" style="color:#f50136"><?php echo $emailErr;?></span>
                     <input type="text" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                <span class="error"><?php echo $contactErr;?></span>
+                <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
                     <input type="text" name="contact" class="form-control" placeholder="Contact">
                 </div>
+                <h4>Participant 2</h4>
+                <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
+                    <input type="text" name="name2"  class="form-control" placeholder="Name">
+                </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="institute"  placeholder="Institute"></textarea>
+                <span class="error" style="color:#f50136"><?php echo $emailErr;?></span>
+                    <input type="text" name="email2" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
+                    <input type="text" name="contact2" class="form-control" placeholder="Contact">
                 </div>
                 <div class="form-group text-right">
-                    <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register"></input>
+                    <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register">
                 </div>
             </form>
             </div>
         </div> 
     </div>
 </section>
-<footer>
-    <div class="container">
-        <div class="row justify-content-center">
 
-            <div class="col-md-4 col-12">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <div class="footer_logo">
-                            <img src="assets/img/iimslogo.png" height=80px alt="Khlur-thma">
-                        </div>
-                    </div>
-                    <div class="footer_box_body">
-                            <p>
-                                    Khlur-thma is the annual Interschool business fest of IIM Shillong, register today to interact with the brightest minds of the country in one place. <br>Like share and subscribe.</p>
-                                
-                        <ul class="footer_social">
-                            <li>
-                                <a href="#"><i class="ion-social-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="ion-social-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="footer_box">
-                    <div class="footer_header">
-                        <h4 class="footer_title">
-                            instagram
-                        </h4>
-                    </div>
-                    <div class="footer_box_body">
-                        <ul class="instagram_list">
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c3.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c2.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="assets/img/cleander/c1.png" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+<div id="include_footer">
+    
+<div class="copyright_footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
             </div>
         </div>
     </div>
-</footer>
 <!-- jquery -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- bootstrap -->

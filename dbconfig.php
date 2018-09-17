@@ -2,7 +2,7 @@
 
 $conn=mysqli_connect("localhost","root","Admin@123$","registrations");
 if($conn){
-    #echo "im here";
+   # echo "im here";
 }
 
 if(!$conn)

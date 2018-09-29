@@ -1,8 +1,24 @@
+<?php include('dbConfig.php'); ?>
+    <?php
+        $result = mysql_query("SELECT count(*) from justbidit;");
+        
+        // $result = mysql_query('SELECT COUNT(1) FROM `justbidit`');
+        // $num_rows = mysql_result($result, 0, 0);
+        // echo $num_rows
+        // if($result) {
+        //    echo $row[0];
+        // } else {
+        //     echo "error";
+        // }
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- ========== Title ========== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
     <title> Khlurthma</title>
     <!-- ========== Favicon Ico ========== -->
     <!--<link rel="icon" href="fav.ico">-->
@@ -67,6 +83,9 @@
                             <p class="cover-date">
                                 26th-27th October 2018  - IIM Shillong.
                             </p>
+                            <p class="cover-date">
+                                <?php echo mysql_result($result, 0); ?>
+                            </p>
                             <a href="events.php" class=" btn btn-primary btn-rounded" >
                                 Register Now
                             </a>
@@ -75,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="cover_item" style="background: url('assets/img/bg/slider3.png');">
+        <div class="cover_item" style="background: url('assets/img/bg/slider3.png'); background-size: cover;">
             <div class="slider_content">
                 <div class="slider-content-inner">
                     <div class="container">
@@ -88,34 +107,41 @@
                                 26th-27th October 2018  - IIM Shillong.
                             </p> -->
                             <p><br></p>
-                            <a href="archive.html" class=" btn btn-primary btn-rounded" >
-                                Khlur-thma '17
+                            <a href="events.php" class=" btn btn-primary btn-rounded" >
+                                Events
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cover_item">                      
+        <div class="cover_item"  style="background: url('assets/img/bg/bg3.png');">                      
             <div class="slider_content">
-                    <video loop muted autoplay src="assets/video/khlurthma17.mp4"> </video>
-                <!-- <div class="slider-content-inner">
+                    <!-- <video loop muted autoplay src="assets/video/khlurthma17.mp4"> </video>     -->
+                <div class="slider-content-inner">
                     <div class="container">
                         <div class="slider-content-center">
                             <h2 class="cover-title">
-                                Prepare yourself for
+                                <!-- Prepare yourself for -->
                             </h2>
-                            <strong class="cover-xl-text">Khlur-thma</strong>
+                            <!-- <strong class="cover-xl-text">Khlur-thma</strong> -->
                             <p class="cover-date">
-                                26th-27th October 2018  - IIM Shillong
+                                <!-- 26th-27th October 2018  - IIM Shillong -->
                             </p>
-                            <a href="events.php" class=" btn btn-primary btn-rounded" >
+                            <!-- <a href="events.php" class=" btn btn-primary btn-rounded" >
                                     Register today
-                            </a>
+                            </a> -->
+                            <div class="home-content__video">
+                                    <a class="video-link" href="https://www.youtube.com/embed/eVaZyUhp-m0" data-lity>
+                                        <span class="video-icon"></span>
+                                        <span class="video-text">Play Video</span>
+                                    </a>
+                                </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
+            
         </div>
     </div>
     <div class="cover_nav">
@@ -213,7 +239,7 @@
 
         <!--event features-->
         <div class="row justify-content-center mt30">
-            <div class="col-12 col-md-6 col-lg-3">
+            <!-- <div class="col-12 col-md-6 col-lg-3">
                 <div class="icon_box_one">
                     <i class="lnr lnr-mic"></i>
                     <div class="content">
@@ -223,7 +249,7 @@
                         <a href="speakers.html">read more</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="icon_box_one">
@@ -232,7 +258,7 @@
                         <h4>8 Competitions</h4>
                         <p>
                             Compete with the best minds in the country from several other b-schools and prove your mettle</p>
-                        <a href="events.html">read more</a>
+                        <a href="events.php">read more</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +270,7 @@
                         <h4>Cash prizes</h4>
                         <p>
                             Win lucrative cash prizes from various competitions throughout all the domains of management</p>
-                        <a href="events.html">read more</a>
+                        <a href="events.php">read more</a>
                     </div>
                 </div>
             </div>
@@ -278,22 +304,22 @@
             <iframe width="320" height="200" 
             src="https://www.youtube.com/embed/GT2faBdWvA0">
         </iframe>
-        <div style="width: 50%; float: right" class="brand_carousel owl-carousel">
+        <div style="width: 60%; height:100%; float: right" class="brand_carousel owl-carousel">
                 <div class="brand_item text-center">
-                    <img src="assets/img/brands/b1.png" alt="brand">
+                    <img src="assets/img/bg/slider2.png" alt="brand">
                 </div>
                 <div class="brand_item text-center">
-                    <img src="assets/img/brands/b2.png" alt="brand">
+                    <img src="assets/img/brands/brand2.png" alt="brand">
                 </div>
     
                 <div class="brand_item text-center">
-                    <img src="assets/img/brands/b3.png" alt="brand">
+                    <img src="assets/img/brands/brand3.png" alt="brand">
                 </div>
                 <div class="brand_item text-center">
-                    <img src="assets/img/brands/b4.png" alt="brand">
+                    <img src="assets/img/brands/brand4.png" alt="brand">
                 </div>
                 <div class="brand_item text-center">
-                    <img src="assets/img/brands/b5.png" alt="brand">
+                    <img src="assets/img/brands/brand5.png" alt="brand">
                 </div>
             </div>
         </div>
@@ -424,8 +450,9 @@
                 previous associations
             </h3>
         </div>
+        <h5>Coming soon....</h5>
         <div class="brand_carousel owl-carousel">
-            <div class="brand_item text-center">
+            <!-- <div class="brand_item text-center">
                 <img src="assets/img/brands/b1.png" alt="brand">
             </div>
             <div class="brand_item text-center">
@@ -440,11 +467,12 @@
             </div>
             <div class="brand_item text-center">
                 <img src="assets/img/brands/b5.png" alt="brand">
-            </div>
+            </div> -->
+            
         </div>
         
             <div  >
-        <a style="color: #f50136;font-size: 12px !important;font-weight: 700 !important;" href="register.php">Click here to associate with us</a></div>
+        <a style="color: #f50136;font-size: 12px !important;font-weight: 700 !important;" href="sponsor.php">Click here to associate with us</a></div>
    
     </div>
 </section>

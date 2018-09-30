@@ -4,33 +4,21 @@
     $name=$email=$contact=$institute=$event="";
     $formError="";
     $query="";
-    if($_GET['event']) {
-        $query=$_GET['event'];
-    }
+    
     // if($_GET['event']=="justbidit") {
     //     $event="Just Bid It";
     // } else 
-    if ($_GET['event']=="corona") {
-        $event="Corona";
-    } else if ($_GET['event']=="touchstone") {
-        $event="Touch Stone";
-    } else if ($_GET['event']=="delfinus") {
-        $event="DelFINus";
-    } else if($_GET['event']=="ecomania") {
-        $event="Eco Mania";
-    }
+    
     if(isset($_POST['register']))
     {
         $name =$_POST['name'];
         $email = $_POST['email'];
         $contact = $_POST['contact'];
-        $institute = $_POST['institute'];
-        $name2 =$_POST['name2'];
-        $email2 = $_POST['email2'];
-        $contact2 = $_POST['contact2'];
+        $company = $_POST['company'];
+       
         $required="Required field";
-        $sql = "INSERT INTO $query (name1,email1,contact1,name2,email2,contact2,institute) 
-        VALUES ('$name','$email','$contact','$name2','$email2','$contact2','$institute')";
+        $sql = "INSERT INTO sponsors (name1,email1,contact1,company) 
+        VALUES ('$name','$email','$contact','$company')";
 
         #echo $sql;
         if(!$name) {
@@ -54,7 +42,7 @@
                 $contactErr = "Enter valid contact number";
             }
         }
-        if(!$institute) {
+        if(!$company) {
             $instituteErr=$required;
         }
         
@@ -74,6 +62,8 @@
 <html lang="en">
 <head>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
     <!-- ========== Title ========== -->
     <title> Khlurthma</title>
     <!-- ========== Favicon Ico ========== -->
@@ -125,7 +115,7 @@
 
         <div class="breadcrumbs">
             <ul>
-                <li><a href="index.html">Home</a>  |   </li>
+                <li><a href="index.php">Home</a>  |   </li>
                 <li><span>Sponsorship</span></li>
             </ul>
         </div>
@@ -143,10 +133,7 @@
                 <span class="error" style="color:#f50136"><strong><?php echo $formError;?></strong></span>
                 <form action="<?php $event= $query;?>" method="POST">
                 <div class="form-group">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="institute"  placeholder="Full name of the institute, city"></textarea>
-                </div>
-                <h4>Participant 1</h4>
+                <h4>Details</h4>
                 <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
                     <input type="text" name="name"  class="form-control" placeholder="Name">
                 </div>
@@ -157,18 +144,6 @@
                 <div class="form-group">
                 <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
                     <input type="text" name="contact" class="form-control" placeholder="Contact">
-                </div>
-                <h4>Participant 2</h4>
-                <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
-                    <input type="text" name="name2"  class="form-control" placeholder="Name">
-                </div>
-                <div class="form-group">
-                <span class="error" style="color:#f50136"><?php echo $emailErr;?></span>
-                    <input type="text" name="email2" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
-                    <input type="text" name="contact2" class="form-control" placeholder="Contact">
                 </div>
                 <div class="form-group text-right">
                     <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register">

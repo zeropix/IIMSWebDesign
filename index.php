@@ -1,15 +1,18 @@
 <?php include('dbConfig.php'); ?>
     <?php
-        $result = mysql_query("SELECT count(*) from justbidit;");
+         $justbidit = mysqli_query($conn,"SELECT * from justbidit;");
+         $corona=mysqli_query($conn,"SELECT * from corona;");
+         $coupdegrace = mysqli_query($conn,"SELECT * from coupdegrace;");
+         $touchstone =mysqli_query($conn,"SELECT * from touchstone;");
+         $supernova = mysqli_query($conn,"SELECT * from supernova;");
+         $speakerazzi=mysqli_query($conn,"SELECT * from speakerazzi;");
+         $delfinus = mysqli_query($conn,"SELECT * from delfinus;");
+         $enthral=mysqli_query($conn,"SELECT * from enthral;");
+         $shrinkhala = mysqli_query($conn,"SELECT * from shrinkhala;");
+         $rowcount=mysqli_num_rows($justbidit) + mysqli_num_rows($corona) + mysqli_num_rows($corona)
+         + mysqli_num_rows($coupdegrace) + mysqli_num_rows($touchstone) + mysqli_num_rows($supernova) 
+         + mysqli_num_rows($speakerazzi) + mysqli_num_rows($delfinus) + mysqli_num_rows($enthral);
         
-        // $result = mysql_query('SELECT COUNT(1) FROM `justbidit`');
-        // $num_rows = mysql_result($result, 0, 0);
-        // echo $num_rows
-        // if($result) {
-        //    echo $row[0];
-        // } else {
-        //     echo "error";
-        // }
     
     ?>
 <!DOCTYPE html>
@@ -81,10 +84,10 @@
                             </h2>
                             <strong class="cover-xl-text">Khlur-thma</strong>
                             <p class="cover-date">
-                                26th-27th October 2018  - IIM Shillong.
+                                26th-27th October 2018  - IIM Shillong
                             </p>
-                            <p class="cover-date">
-                                <?php echo mysql_result($result, 0); ?>
+                            <p class="cover-date" >
+                                <?php echo $rowcount; ?> Registrations
                             </p>
                             <a href="events.php" class=" btn btn-primary btn-rounded" >
                                 Register Now
@@ -132,7 +135,7 @@
                                     Register today
                             </a> -->
                             <div class="home-content__video">
-                                    <a class="video-link" href="https://www.youtube.com/embed/eVaZyUhp-m0" data-lity>
+                                    <a class="video-link" href="https://www.youtube.com/watch?v=1_nIJrVs4Qw" data-lity>
                                         <span class="video-icon"></span>
                                         <span class="video-text">Play Video</span>
                                     </a>
@@ -255,7 +258,7 @@
                 <div class="icon_box_one">
                     <i class="lnr lnr-rocket"></i>
                     <div class="content">
-                        <h4>8 Competitions</h4>
+                        <h4>9 Competitions</h4>
                         <p>
                             Compete with the best minds in the country from several other b-schools and prove your mettle</p>
                         <a href="events.php">read more</a>
@@ -304,6 +307,11 @@
             <iframe width="320" height="200" 
             src="https://www.youtube.com/embed/GT2faBdWvA0">
         </iframe>
+        <!-- <video width="320" height="240" controls>
+            <source src="assets/video/khlurthma18.mp4" type="video/mp4">
+            
+            </video> -->
+        <!-- <video  loop muted autoplay src=""> </video>  -->
         <div style="width: 60%; height:100%; float: right" class="brand_carousel owl-carousel">
                 <div class="brand_item text-center">
                     <img src="assets/img/bg/slider2.png" alt="brand">
@@ -325,122 +333,7 @@
         </div>
     </div>
 </section>
-<!-- <section class="bg-img pt70 pb70" height="150" style="background-color: black;">
-    <div class="display-table center-text">
-        <div class="display-table-cell">
-            <div id="rounded-countdown">
-                <div class="countdown" data-remaining-sec="416158"></div>
-            </div>
-            
-        </div> display-table-cell
-    </div> main-area
-	</div>
-</section> -->
-<!--event count down end-->
 
-<!--speaker section-->
-<!-- <section class="pb100">
-    <div class="container">
-        <div class="section_title mb50">
-            <h3 class="title">
-               our speakers
-            </h3>
-        </div>
-    </div>
-    <div class="row justify-content-center no-gutters">
-
-        <h2>Coming soon...</h2>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s1.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Patricia Stone</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s2.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">James Oliver</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s3.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Carla Banks</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s4.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">William Smith</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s5.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Jessica Black</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s6.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Patricia Stone</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s7.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Duncan Stan</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="col-md-3 col-sm-6">
-            <div class="speaker_box">
-                <div class="speaker_img">
-                    <img src="assets/img/speakers/s8.png" alt="speaker name">
-                    <div class="info_box">
-                        <h5 class="name">Patricia Stone</h5>
-                        <p class="position">CEO Company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <!--brands section -->
 <section class="bg-gray pt100 pb100">
@@ -450,19 +343,19 @@
                 previous associations
             </h3>
         </div>
-        <h5>Coming soon....</h5>
+        <!-- <h5>Coming soon....</h5> -->
         <div class="brand_carousel owl-carousel">
-            <!-- <div class="brand_item text-center">
-                <img src="assets/img/brands/b1.png" alt="brand">
+            <div class="brand_item text-center">
+                <img src="assets/img/brands/airtel.png" alt="brand">
             </div>
             <div class="brand_item text-center">
-                <img src="assets/img/brands/b2.png" alt="brand">
+                <img src="assets/img/brands/pizzahut.png" alt="brand">
             </div>
 
-            <div class="brand_item text-center">
-                <img src="assets/img/brands/b3.png" alt="brand">
+             <div class="brand_item text-center">
+                <img src="assets/img/brands/ubi.png" alt="brand">
             </div>
-            <div class="brand_item text-center">
+            <!--<div class="brand_item text-center">
                 <img src="assets/img/brands/b4.png" alt="brand">
             </div>
             <div class="brand_item text-center">

@@ -12,9 +12,6 @@
          $rowcount=mysqli_num_rows($justbidit) + mysqli_num_rows($corona) + mysqli_num_rows($corona)
          + mysqli_num_rows($coupdegrace) + mysqli_num_rows($touchstone) + mysqli_num_rows($supernova) 
          + mysqli_num_rows($speakerazzi) + mysqli_num_rows($delfinus) + mysqli_num_rows($enthral);
-        
-        // $result = mysql_query('SELECT COUNT(1) FROM `justbidit`');
-        $rowcount=mysqli_num_rows($result);
 
     
     ?>

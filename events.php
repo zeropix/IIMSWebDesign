@@ -105,7 +105,7 @@
                             
                              </div>
                         <div class="col-md-6 col-12">
-                        <img class="pl50"  height="300px" src="assets/img/posters/bitesys.png" alt="event_brochure">
+                        <img class="pl150"  height="350px" src="assets/img/posters/bitesys.png" alt="event_brochure">
                     
                                </div>
                     </div>
@@ -138,7 +138,7 @@
                             
                             </div>
                         <div class="col-md-6 col-12">
-                        <img class="pl50"  height="300px" src="assets/img/posters/corona.png" alt="event_brochure">
+                        <img class="pl150"  height="350px" src="assets/img/posters/corona.png" alt="event_brochure">
                     
                                </div>
                     </div>
@@ -173,7 +173,7 @@
                             
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl50"  height="300px" src="assets/img/posters/Ecobiz.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/Ecobiz.png" alt="event_brochure">
                     
                             </div>
                 </div>
@@ -207,7 +207,7 @@
                             
                             </div>
                     <div class="col-md-6 col-12">
-                            <img class="pl50"  height="300px" src="assets/img/posters/Markathon.png" alt="event_brochure">
+                            <img class="pl150"  height="350px" src="assets/img/posters/Markathon.png" alt="event_brochure">
                     
                         </div>
                 </div>
@@ -236,13 +236,12 @@
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
                             Round 1 : 5th October 2018<br>
-                            Round 2 : TBD<br>
-                            Round 3 : 26th-27th October<br>
+                            Round 2 : 26th-27th October<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "delfinus"; ?>">Register here</a>
                         
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl50"  height="300px" src="assets/img/posters/Niveshak.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/Niveshak.png" alt="event_brochure">
                     
                             </div>
                             
@@ -276,8 +275,8 @@
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "enthral"; ?>">Register here</a>
                             
                         </div>
-                    <div class="col-md-6 col-12" height="300px" >
-                        <img class="pl50"  height="300px" src="assets/img/posters/enthral.png" alt="event_brochure">
+                    <div class="col-md-6 col-12" >
+                        <img class="pl150"  height="350px" src="assets/img/posters/enthral.png" alt="event_brochure">
                     </div>       
                 </div>
             </div>
@@ -304,13 +303,13 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 1st October, 2018 - 10:50 P.M <br>
+                            Round 1: 2st October, 2018 - 10:50 P.M <br>
                             Round 2: 5th October, 2018 EOD <br>
                             Round 3: 26th-27th October, 2018 <br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "shrinkhala"; ?>">Register here</a>
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl50"  height="300px" src="assets/img/posters/opera.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/opera.png" alt="event_brochure">
                     
                         </div>
                             
@@ -346,7 +345,7 @@
                         
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl50"  height="300px" src="assets/img/posters/coupdegrace.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/coupdegrace.png" alt="event_brochure">
                          </div>
                             
                 </div>
@@ -380,7 +379,7 @@
                         
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl50"  height="300px" src="assets/img/posters/speakerazzi.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/speakerazzi.png" alt="event_brochure">
                     
                             </div>
                             

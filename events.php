@@ -85,8 +85,8 @@
                         JustBidIT
                     </div>
                     <div class="event_date">
-                    Bidding War for the cricketing stars<br>
-                    EVENT DOMAIN: IT & Systems Competition
+                    Experience the IT thing<br>
+                    ORGANIZING CLUB: IT & Systems Club
                 </div>
                 </div>
                 <div class="event_word">
@@ -101,6 +101,8 @@
                             TIMELINE:<br>
                                 Round 1: 3rd October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
+                                CONTACT: <br>
+                                Shashank Gontia-9871274735<br>Nikita Kare-9637008337<br>bitesys@iimshillong.ac.in<br>
                                 <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "justbidit"; ?>">Register here</a>
                             
                              </div>
@@ -118,14 +120,14 @@
                         Corona
                     </div>
                     <div class="event_date">
-                    Eventually, Everything Connects<br>
-                        EVENT DOMAIN: Consulting
+                    Strategic Minds! Innovative Solutions!<br>
+                        ORGANIZING CLUB: Consulting
                     </div>
                 </div>
                 <div class="event_word">
                     <div class="row justify-content-center">
                         <div class="col-md-6 col-12"> 
-                        Corona is a three round case study competition aimed to appraise industry knowledge of students, create and implement groundbreaking solutions.<br>
+                        Corona is a two round case study competition aimed to appraise industry knowledge of students, create and implement groundbreaking solutions.<br>
                         EVENT GUIDELINES & ELIGIBILITY:<br>
                             - Register in teams of Two and both members must be from same campus<br>
                             - An individual cannot be a member of more than one team<br>
@@ -134,6 +136,7 @@
                             TIMELINE:<br>
                                 Round 1: 2nd October- 9th October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
+                            CONTACT:<br> Aniket Upadhyay - 8557992374<br>Adarsh Rajput - 9113669904<br>conquest@iimshillong.ac.in<br>
                                 <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "corona"; ?>">Register here</a>
                             
                             </div>
@@ -169,6 +172,8 @@
                             Round 1: 1st October 2018<br>
                             Round 2: 8th October 2018<br>
                             Round 3: 26th-27th October 2018<br>
+                            CONTACT: <br>
+                            Akash Dwivedi -8192921333<br>Vanya Nigam - 6393201546<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "supernova"; ?>">Register here</a>
                             
                             </div>
@@ -188,7 +193,7 @@
                 </h5>
                 <div class="event_date">
                 The true test of your Marketing Acumen<br>
-                    EVENT DOMAIN: Marketing
+                    ORGANIZING CLUB: Marketing
                 </div>
             </div>
             <div class="event_word">
@@ -203,6 +208,8 @@
                             TIMELINE:<br>
                             Round 1: 7th October 2018<br>
                             Round 2: 26th-27th October 2018<br>
+                            CONTACT: <br>
+                            Kratgya Gupta-9825412637<br>Gaurav Lakhani-8762732362<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "touchstone"; ?>">Register here</a>
                             
                             </div>
@@ -221,7 +228,7 @@
                 </h5>
                 <div class="event_date">
                 Unleash the Niveshak in You<br>
-                    EVENT DOMAIN: Finance
+                    ORGANIZING CLUB: Finance
                 </div>
             </div>
             <div class="event_word">
@@ -237,6 +244,8 @@
                             TIMELINE:<br>
                             Round 1 : 5th October 2018<br>
                             Round 2 : 26th-27th October<br>
+                            CONTACT: <br>
+                            Rajat Magotra-8447654372<br>Vinti Singla-9467850831<br>financeclub@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "delfinus"; ?>">Register here</a>
                         
                             </div>
@@ -272,6 +281,8 @@
                             TIMELINE:<br>
                             Round 1: 5th October, 2018<br>
                             Round 2: 26th-27th October, 2018 <br>
+                            CONTACT:<br>
+                            Ameya poyarekar - 9987871317<br>Shivang Gupta - 76658 93386<br>ushr@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "enthral"; ?>">Register here</a>
                             
                         </div>
@@ -303,9 +314,10 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 2st October, 2018 - 10:50 P.M <br>
-                            Round 2: 5th October, 2018 EOD <br>
-                            Round 3: 26th-27th October, 2018 <br>
+                            Round 1: 5th October, 2018 EOD <br>
+                            Round 2: 26th-27th October, 2018 <br>
+                            CONTACT: <br>
+                            Bhawesh Bhandari- 8210178940<br>Alisha Shaw- 9007188140<br>opsclub@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "shrinkhala"; ?>">Register here</a>
                             </div>
                     <div class="col-md-6 col-12">
@@ -340,7 +352,7 @@
                             TIMELINE:<br>
                             Round 1: 10th October, 2018<br>
                             Round 2: 26th-27th October, 2018<br>
-
+                            CONTACT:<br> Vaibhavi Parvatikar-8866055311 <br>Soumya Malhotra- 9456512252<br>zeitgiest@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "coupdegrace"; ?>">Register here</a>
                         
                             </div>
@@ -366,8 +378,8 @@
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                    Speakerazzi is a 3 round competition involving online speech submissions, a MUN conference ending with the last round 'the battle of world leaders' <br>
-                    EVENT GUIDELINES & ELIGIBILITY:<br>
+                    Speakarazzi is a two-round competition including online speech submissions and a conference round to provide participants with a competitive platform to showcase their critical thinking and public speaking skills.
+                    <br>EVENT GUIDELINES & ELIGIBILITY:<br>
                             - Register in teams of Two and both members must be from same campus<br>
                             - An individual cannot be a member of more than one team<br>
                             - Accommodation and Food would be provided<br>
@@ -375,6 +387,8 @@
                             TIMELINE:<br>
                             Round 1: 7th October, 2018<br>
                             Round 2: 26th October, 2018<br>
+                            CONTACT: <br>
+                            Pankhuri Saxena - 8959208778<br>Sushain Bhat - 8825050236<br>toastmasters.iims@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "speakerazzi"; ?>">Register here</a>
                         
                             </div>

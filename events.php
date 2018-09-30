@@ -250,7 +250,7 @@
                         
                             </div>
                     <div class="col-md-6 col-12">
-                    <img class="pl150"  height="350px" src="assets/img/posters/Niveshak2.png" alt="event_brochure">
+                    <img class="pl150"  height="350px" src="assets/img/posters/Niveshak.png" alt="event_brochure">
                     
                             </div>
                             

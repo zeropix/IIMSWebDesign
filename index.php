@@ -1,4 +1,4 @@
-<?php include('dbConfig.php'); ?>
+<?php include('dbconfig.php'); ?>
     <?php
          $justbidit = mysqli_query($conn,"SELECT * from justbidit;");
          $corona=mysqli_query($conn,"SELECT * from corona;");

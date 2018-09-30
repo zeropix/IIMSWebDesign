@@ -1,4 +1,4 @@
-<?php include('dbConfig.php'); ?>
+<?php include('dbconfig.php'); ?>
     <?php
     $nameErr =$emailErr=$contactErr=$name2Err =$email2Err=$contact2Err=$teamnameErr =$instituteErr = "";
     $name=$email=$contact=$institute=$name2=$email2=$contact2=$teamname=$event="";

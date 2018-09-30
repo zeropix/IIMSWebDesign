@@ -308,7 +308,7 @@
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                    Op-Era, presents to you SHRINKALA-2018, an amalgamation of quizzes, case-study and simulation to stimulate your quotient. <br>               
+                    Op-Era, the Operations Club of IIM Shillong presents you SHRINKHALA-2018, an amalgamation of quizzes and case-study to stimulate your quotient. <br>               
                     EVENT GUIDELINES & ELIGIBILITY:<br>
                             - Register in teams of Two and both members must be from same campus<br>
                             - An individual cannot be a member of more than one team<br>

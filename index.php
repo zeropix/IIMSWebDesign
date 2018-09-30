@@ -1,15 +1,9 @@
 <?php include('dbConfig.php'); ?>
     <?php
-        $result = mysql_query("SELECT count(*) from justbidit;");
+        $result = mysqli_query($conn,"SELECT * from justbidit;");
         
         // $result = mysql_query('SELECT COUNT(1) FROM `justbidit`');
-        // $num_rows = mysql_result($result, 0, 0);
-        // echo $num_rows
-        // if($result) {
-        //    echo $row[0];
-        // } else {
-        //     echo "error";
-        // }
+        $rowcount=mysqli_num_rows($result);
     
     ?>
 <!DOCTYPE html>
@@ -84,7 +78,7 @@
                                 26th-27th October 2018  - IIM Shillong.
                             </p>
                             <p class="cover-date">
-                                <?php echo mysql_result($result, 0); ?>
+                                <?php echo $rowcount; ?>
                             </p>
                             <a href="events.php" class=" btn btn-primary btn-rounded" >
                                 Register Now

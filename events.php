@@ -234,7 +234,7 @@
             <div class="event_word">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-12">
-                    Del‘FIN’us is a 2 round competition, wherein teams would compete in an online quiz, the winners of which would advance to the finals, an ‘OTC Trading’ round.
+                    Del'FIN'us is a 2 round competition, wherein teams would compete in an online quiz, the winners of which would advance to the finals, an 'OTC Trading' round.
 <br>                       
                             EVENT GUIDELINES & ELIGIBILITY:<br>
                             - Register in teams of Two and both members must be from same campus<br>
@@ -279,8 +279,9 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 6th-8th October, 2018<br>
-                            Round 2: 26th-27th October, 2018 <br>
+                            Round 1: 5th October, 2018<br>
+                            Round 2: 6th-8th October, 2018<br>
+                            Round 3: 26th-27th October, 2018 <br>
                             CONTACT:<br>
                             Ameya poyarekar - 9987871317<br>Shivang Gupta - 76658 93386<br>ushr@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "enthral"; ?>">Register here</a>

@@ -1,24 +1,32 @@
 <?php include('dbConfig.php'); ?>
     <?php
-    $nameErr =$emailErr=$contactErr =$instituteErr = "";
-    $name=$email=$contact=$institute=$event="";
+    $nameErr =$emailErr=$contactErr=$name2Err =$email2Err=$contact2Err=$teamnameErr =$instituteErr = "";
+    $name=$email=$contact=$institute=$name2=$email2=$contact2=$teamname=$event="";
     $formError="";
     $query="";
     if($_GET['event']) {
         $query=$_GET['event'];
     }
-    // if($_GET['event']=="justbidit") {
-    //     $event="Just Bid It";
-    // } else 
-    if ($_GET['event']=="corona") {
+    if($_GET['event']=="justbidit") {
+        $event="JustBidIT";
+    } else if ($_GET['event']=="corona") {
         $event="Corona";
     } else if ($_GET['event']=="touchstone") {
-        $event="Touch Stone";
+        $event="Touchstone";
     } else if ($_GET['event']=="delfinus") {
-        $event="DelFINus";
-    } else if($_GET['event']=="ecomania") {
-        $event="Eco Mania";
+        $event="Del‘FIN’us";
+    } else if($_GET['event']=="supernova") {
+        $event="Supernova";
+    } else if($_GET['event']=="speakerazzi") {
+        $event="Speakerazzi";
+    } else if($_GET['event']=="coupdegrace") {
+        $event="Coup De Grace";
+    } else if($_GET['event']=="enthral") {
+        $event="entHRal";
+    } else if($_GET['event']=="shrinkhala") {
+        $event="Shrinkhala";
     }
+
     if(isset($_POST['register']))
     {
         $name =$_POST['name'];
@@ -28,10 +36,10 @@
         $name2 =$_POST['name2'];
         $email2 = $_POST['email2'];
         $contact2 = $_POST['contact2'];
+        $teamname = $_POST['teamname'];
         $required="Required field";
-        $sql = "INSERT INTO $query (name1,email1,contact1,name2,email2,contact2,institute) 
-        VALUES ('$name','$email','$contact','$name2','$email2','$contact2','$institute')";
-
+        $sql = "INSERT INTO $query (name1,email1,contact1,name2,email2,contact2,institute, teamname) 
+        VALUES ('$name','$email','$contact','$name2','$email2','$contact2','$institute','$teamname')";
         #echo $sql;
         if(!$name) {
             $nameErr=$required;
@@ -53,18 +61,53 @@
             if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{10}$/", $contact)) {
                 $contactErr = "Enter valid contact number";
             }
+        } 
+        if(!$name2) {
+            $name2Err=$required;
+        } else{
+            if (!preg_match("/^[a-zA-Z ]*$/",$name2)) {
+                $name2Err = "Only letters and white space allowed"; 
+            }
+        }
+        if(!$email2) {
+            $email2Err=$required;
+        }else {
+            if (!filter_var($email2, FILTER_VALIDATE_EMAIL)) {
+                $email2Err = "Invalid email";
+            }
+        }
+        if(!$contact2) {
+            $contact2Err=$required;
+        } else {
+            if(!preg_match("/^(\+\d{1,3}[- ]?)?\d{10}$/", $contact2)) {
+                $contact2Err = "Enter valid contact number";
+            }
         }
         if(!$institute) {
             $instituteErr=$required;
+        } else {
+            if (!preg_match("/^[a-zA-Z ]*$/",$institute)) {
+                $instituteErr = "Only letters and white space allowed";
+            }
+        }
+        if(!$teamname) {
+            $teamnameErr=$required;
+        } else {
+            if (!preg_match("/^[a-zA-Z ]*$/",$teamname)) {
+                $teamnameErr = "Only letters and white space allowed";
+            }
         }
         
-        if(!$emailErr && !$nameErr && !$contactErr && !$instituteErr) {
+        if(!$teamnameErr && !$emailErr && !$nameErr && !$contactErr && !$email2Err && !$name2Err && !$contact2Err && !$instituteErr) {
             #echo $sql;
             $result = mysqli_query($conn,$sql);
+            
             if(!$result) {
                 #echo "did not insert". mysql_error();
             }
             $formError="You have registered successfully";
+            echo "<script> location.href='confirmation.html'; </script>";
+            exit;
         } else {
             $formError= "Fill all the details correctly";
         }
@@ -97,7 +140,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
   $( function() {
-    var availableTags = [
+    var availableTags = 
+    [
+
     "TEZPUR UNIVERSITY, TEZPUR",
 "JAWAHARLAL NEHRU SCHOOL OF MANAGEMENT STUDIES, ASSAM UNIVERSITY, SILCHAR",
 "ROYAL SCHOOL OF BUSINESS, GUWAHATI",
@@ -868,6 +913,41 @@
 "ASIAN INSTITUTE OF MANAGEMENT AND TECHNOLOGY, GUWAHATI",
 "KRISHNA KANTA HANDIQUI STATE OPEN UNIVERSITY, GUWAHATI",
 "ASSAM INSTITUTE OF MANAGEMENT, GUWAHATI",
+"INDIAN INSTITUTE OF BUSINESS MANAGEMENT, PATNA, BIHAR",
+"CIMAGE COLLEGE, PATNA, BIHAR",
+"L.N. MISHRA INSTITUE OF ECONOMIC DEVELOPMENT & SOCIAL CHANGE, PATNA, BIHAR",
+"ARCADE BUSINESS COLLEGE, PATNA, BIHAR",
+"J.D. WOMEN'S COLLEGE, PATNA, BIHAR",
+"ANUGRAH NARAYAN COLLEGE, PATNA, BIHAR",
+"L N MISHRA COLLEGE CAMPUS, PATNA, BIHAR",
+"NALANDA COLLEGE, BIHAR SHARIF, BIHAR",
+"R P SHARMA INSTITUTE OF TECHNOLOGY, PATNA, BIHAR",
+"DR. ZAKIR HUSAIN INSTITUTE, PATNA, BIHAR",
+"VAISHALI INSTITUTE OF BUSINESS AND RURAL MANAGEMENT, MUZAFFARPUR, BIHAR",
+"BIRLA INSTITUTE OF TECHNOLOGY, MESRA, PATNA CAMPUS, PATNA, BIHAR",
+"GAYA COLLEGE, GAYA, BIHAR",
+"INTERNATIONAL SCHOOL OF MANAGEMENT, PATNA, BIHAR",
+"ADMERIT, PATNA, BIHAR",
+"ISLAMIA DEGREE COLLEGE, MUZAFFARPUR, MUZAFFARPUR, BIHAR",
+"CIMAGE COLLEGE, VIVEKANAND MARG BRANCH, PATNA, BIHAR",
+"RAMDAYALU SINGH COLLEGE, , MUZAFFARPUR, BIHAR",
+"ST. KABIR INSTITUTE OF PROFESSIONAL STUDIES, AHMEDABAD, GUJARAT",
+"L.J.INSTITUTE OF MANAGEMENT STUDIES, AHMEDABAD, GUJARAT",
+"NAVANITLAL RANCHHODLAL INSTITUTE OF BUSINESS MANAGEMENT, AHMEDABAD, GUJARAT",
+"SHANTI BUSINESS SCHOOL, AHMEDABAD, GUJARAT",
+"UNITEDWORLD SCHOOL OF BUSINESS, AHMEDABAD, GUJARAT",
+"INSTITUTE OF RURAL MANAGEMENT ANAND, ANAND, GUJARAT",
+"INDIAN INSTITUTE OF MANAGEMENT, BANGALORE",
+"AHMEDABAD INSTITUTE OF TECHNOLOGY, AHMEDABAD, GUJARAT",
+"KALOL INSTITUTE OF MANAGEMENT, KALOL, GUJARAT",
+"GLS COMMERCE COLLEGE OF MBA, AHMEDABAD, GUJARAT",
+"NARMADA COLLEGE OF MANAGEMENT, BHARUCH, GUJARAT",
+"GIDC RAJJU SHROFF ROFEL INSTITUTE OF MANAGEMENT STUDIES, VAPI, GUJARAT",
+"SUNSHINE GROUP OF INSTITUTIONS (MBA, MCA & I-MBA), RAJKOT, GUJARAT",
+"NARAYANA BUSINESS SCHOOL AHMEDABAD, AHMEDABAD, GUJARAT",
+"OAKBROOK BUSINESS SCHOOL, GUJARAT",
+"PARUL INSTITUTE OF TECHNOLOGY, VADODARA, GUJARAT",
+=======
 "INDIAN INSTITUTE OF BUSINESS MANAGEMENT, PATNA, BIHAR",
 "CIMAGE COLLEGE, PATNA, BIHAR",
 "L.N. MISHRA INSTITUE OF ECONOMIC DEVELOPMENT & SOCIAL CHANGE, PATNA, BIHAR",
@@ -1172,7 +1252,7 @@
 
         <div class="breadcrumbs">
             <ul>
-                <li><a href="index.html">Home</a>  |   </li>
+                <li><a href="index.php">Home</a>  |   </li>
                 <li><span>Registration</span></li>
             </ul>
         </div>
@@ -1191,8 +1271,14 @@
                 <form action="<?php $event= $query;?>" method="POST">
                 <div class="form-group">
                 <div class="form-group">
+                    <span class="error" style="color:#f50136"><?php echo $instituteErr;?></span>
                     <input id="tags" type="text" class="form-control" name="institute"  placeholder="Full name of the institute, city">
                 </div>
+                <div class="form-group">
+                    <span class="error" style="color:#f50136"><?php echo $teamnameErr;?></span>
+                    <input type="text" class="form-control" name="teamname"  placeholder="Team Name">
+
+                 </div>
                 <h4>Participant 1</h4>
                 <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
                     <input type="text" name="name"  class="form-control" placeholder="Name">
@@ -1206,15 +1292,15 @@
                     <input type="text" name="contact" class="form-control" placeholder="Contact">
                 </div>
                 <h4>Participant 2</h4>
-                <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
+                <span class="error" style="color:#f50136"><?php echo $name2Err;?></span>
                     <input type="text" name="name2"  class="form-control" placeholder="Name">
                 </div>
                 <div class="form-group">
-                <span class="error" style="color:#f50136"><?php echo $emailErr;?></span>
+                <span class="error" style="color:#f50136"><?php echo $email2Err;?></span>
                     <input type="text" name="email2" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
+                <span class="error" style="color:#f50136"><?php echo $contact2Err;?></span>
                     <input type="text" name="contact2" class="form-control" placeholder="Contact">
                 </div>
                 <div class="form-group text-right">

@@ -58,6 +58,56 @@ h2, .h2 {
     display: none;
 }
 
+.home-content__video {
+  float: right;
+  /* top: 12.2rem; */
+ /* right: 12rem; */
+ bottom: 10rem;
+}
+
+.home-content__video .video-link {
+  display: block;
+  text-align: center;
+  width: 13rem;
+  outline: none;
+  position: relative;
+}
+
+.home-content__video .video-icon {
+  display: inline-block;
+  height: 8.4rem;
+  width: 8.4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../img/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 24px 27px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-content__video .video-text {
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-content__video .video-link:hover .video-text {
+  color: white;
+}
+
+.home-content__video .video-link:hover .video-icon {
+  background-color: #f50136;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;

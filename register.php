@@ -2,7 +2,7 @@
     <?php
     $nameErr =$emailErr=$contactErr=$name2Err =$email2Err=$contact2Err=$teamnameErr =$instituteErr = "";
     $name=$email=$contact=$institute=$name2=$email2=$contact2=$teamname=$event="";
-    $formError="";
+    $formError=$unique1=$unique2="";
     $query="";
     if($_GET['event']) {
         $query=$_GET['event'];
@@ -54,6 +54,12 @@
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $emailErr = "Invalid email";
             }
+            $unique1 = mysqli_query($conn, "SELECT * FROM $query WHERE email1 ='$email' ");
+            if(mysqli_num_rows($unique1) == 0) {
+                // row not found, do stuff...
+            } else {
+                $emailErr = "This email is already registered";
+            }
         }
         if(!$contact) {
             $contactErr=$required;
@@ -75,6 +81,15 @@
             if (!filter_var($email2, FILTER_VALIDATE_EMAIL)) {
                 $email2Err = "Invalid email";
             }
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email";
+            }
+            $unique2 = mysqli_query($conn, "SELECT * FROM $query WHERE email2 ='$email2' ");
+            if(mysqli_num_rows($unique2) == 0) {
+                // row not found, do stuff...
+            } else {
+                $email2Err = "This email is already registered";
+            }
         }
         if(!$contact2) {
             $contact2Err=$required;
@@ -85,11 +100,7 @@
         }
         if(!$institute) {
             $instituteErr=$required;
-        } else {
-            if (!preg_match("/^[a-zA-Z ]*$/",$institute)) {
-                $instituteErr = "Only letters and white space allowed";
-            }
-        }
+        } 
         if(!$teamname) {
             $teamnameErr=$required;
         } else {
@@ -103,11 +114,13 @@
             $result = mysqli_query($conn,$sql);
             
             if(!$result) {
-                #echo "did not insert". mysql_error();
+                $formError= mysql_error();
+            } else {
+                // $formError="You have registered successfully";
+                // echo "<script> location.href='confirmation.html'; </script>";
+                // exit;
             }
-            $formError="You have registered successfully";
-            echo "<script> location.href='confirmation.html'; </script>";
-            exit;
+            
         } else {
             $formError= "Fill all the details correctly";
         }

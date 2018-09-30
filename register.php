@@ -116,9 +116,9 @@
             if(!$result) {
                 $formError= mysql_error();
             } else {
-                // $formError="You have registered successfully";
-                // echo "<script> location.href='confirmation.html'; </script>";
-                // exit;
+                $formError="You have registered successfully";
+                echo "<script> location.href='confirmation.html'; </script>";
+                exit;
             }
             
         } else {

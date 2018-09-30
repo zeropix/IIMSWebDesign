@@ -173,7 +173,7 @@
                             Round 2: 8th October 2018<br>
                             Round 3: 26th-27th October 2018<br>
                             CONTACT: <br>
-                            Akash Dwivedi -8192921333<br>Vanya Nigam - 6393201546<br>
+                            Akash Dwivedi -8192921333<br>Vanya Nigam - 6393201546<br>ecobiz@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "supernova"; ?>">Register here</a>
                             
                             </div>
@@ -209,7 +209,7 @@
                             Round 1: 7th October 2018<br>
                             Round 2: 26th-27th October 2018<br>
                             CONTACT: <br>
-                            Kratgya Gupta-9825412637<br>Gaurav Lakhani-8762732362<br>
+                            Kratgya Gupta-9825412637<br>Gaurav Lakhani-8762732362<br>marketingclub@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "touchstone"; ?>">Register here</a>
                             
                             </div>
@@ -279,7 +279,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 5th October, 2018<br>
+                            Round 1: 6th-8th October, 2018<br>
                             Round 2: 26th-27th October, 2018 <br>
                             CONTACT:<br>
                             Ameya poyarekar - 9987871317<br>Shivang Gupta - 76658 93386<br>ushr@iimshillong.ac.in<br>
@@ -350,7 +350,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 10th October, 2018<br>
+                            Round 1: 5th October, 2018<br>
                             Round 2: 26th-27th October, 2018<br>
                             CONTACT:<br> Vaibhavi Parvatikar-8866055311 <br>Soumya Malhotra- 9456512252<br>zeitgiest@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "coupdegrace"; ?>">Register here</a>

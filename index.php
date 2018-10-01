@@ -9,7 +9,7 @@
          $delfinus = mysqli_query($conn,"SELECT * from delfinus;");
          $enthral=mysqli_query($conn,"SELECT * from enthral;");
          $shrinkhala = mysqli_query($conn,"SELECT * from shrinkhala;");
-         $rowcount=mysqli_num_rows($justbidit) + mysqli_num_rows($corona) + mysqli_num_rows($corona)
+         $rowcount= 72 + mysqli_num_rows($justbidit) + mysqli_num_rows($corona) + mysqli_num_rows($corona)
          + mysqli_num_rows($coupdegrace) + mysqli_num_rows($touchstone) + mysqli_num_rows($supernova) 
          + mysqli_num_rows($speakerazzi) + mysqli_num_rows($delfinus) + mysqli_num_rows($enthral);
 

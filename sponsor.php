@@ -1,4 +1,4 @@
-<?php include('dbconfig.php'); ?>
+<?php include('dbConfig.php'); ?>
     <?php
     $nameErr =$emailErr=$contactErr =$instituteErr = "";
     $name=$email=$contact=$institute=$event="";
@@ -17,7 +17,7 @@
         $company = $_POST['company'];
        
         $required="Required field";
-        $sql = "INSERT INTO sponsors (name1,email1,contact1,company) 
+        $sql = "INSERT INTO sponsors (name,email,contact,company) 
         VALUES ('$name','$email','$contact','$company')";
 
         #echo $sql;
@@ -134,6 +134,10 @@
                 <form action="<?php $event= $query;?>" method="POST">
                 <div class="form-group">
                 <h4>Details</h4>
+                <div class="form-group">
+                <span class="error" style="color:#f50136"><?php echo $instituteErr;?></span>
+                    <input type="text" name="company" class="form-control" placeholder="Company">
+                </div>
                 <span class="error" style="color:#f50136"><?php echo $nameErr;?></span>
                     <input type="text" name="name"  class="form-control" placeholder="Name">
                 </div>
@@ -145,6 +149,7 @@
                 <span class="error" style="color:#f50136"><?php echo $contactErr;?></span>
                     <input type="text" name="contact" class="form-control" placeholder="Contact">
                 </div>
+               
                 <div class="form-group text-right">
                     <input type="submit" class="btn btn-rounded btn-primary" name="register" value="Register">
                 </div>

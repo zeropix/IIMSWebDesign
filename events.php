@@ -101,7 +101,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                                Round 1: 3rd October 2018<br>
+                                Round 1: 5th October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
                                 CONTACT: <br>
                                 Shashank Gontia-9871274735<br>Nikita Kare-9637008337<br>bitesys@iimshillong.ac.in<br>
@@ -244,7 +244,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1 : 5th October 2018<br>
+                            Round 1 : 6th October 2018<br>
                             Round 2 : 26th-27th October<br>
                             CONTACT: <br>
                             Rajat Magotra-8447654372<br>Vinti Singla-9467850831<br>financeclub@iimshillong.ac.in<br>
@@ -281,7 +281,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 5th October, 2018<br>
+                            Round 1: 5th October, 2018 ; 10 P.M (Quiz) <br>
                             Round 2: 6th-8th October, 2018<br>
                             Round 3: 26th-27th October, 2018 <br>
                             CONTACT:<br>
@@ -388,7 +388,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 7th October, 2018<br>
+                            Round 1: 9th October, 2018<br>
                             Round 2: 26th October, 2018<br>
                             CONTACT: <br>
                             Pankhuri Saxena - 8959208778<br>Sushain Bhat - 8825050236<br>toastmasters.iims@iimshillong.ac.in<br>

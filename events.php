@@ -101,7 +101,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                                Round 1: 5th October 2018<br>
+                                Registration Deadline: 9th October 2018<br>
+                                Round 1: 9th October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
                                 CONTACT: <br>
                                 Shashank Gontia-9871274735<br>Nikita Kare-9637008337<br>bitesys@iimshillong.ac.in<br>
@@ -136,7 +137,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                                Round 1: 2nd October- 9th October 2018<br>
+                                Registration Deadline: 9th October 2018; 9 A.M<br>
+                                Round 1: 9th October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
                             CONTACT:<br> Aniket Upadhyay - 8557992374<br>Adarsh Rajput - 9113669904<br>conquest@iimshillong.ac.in<br>
                                 <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "corona"; ?>">Register here</a>
@@ -171,7 +173,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 1st October 2018<br>
+                            Registration Deadline: 3rd October 2018<br>
+                            Round 1: 3rd October 2018<br>
                             Round 2: 8th October 2018<br>
                             Round 3: 26th-27th October 2018<br>
                             CONTACT: <br>
@@ -208,6 +211,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
+                            Registration Deadline: 5th October 2018<br>
                             Round 1: 7th October 2018<br>
                             Round 2: 26th-27th October 2018<br>
                             CONTACT: <br>
@@ -244,6 +248,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
+                            Registration Deadline: 5th October 2018<br>
                             Round 1 : 6th October 2018<br>
                             Round 2 : 26th-27th October<br>
                             CONTACT: <br>
@@ -281,7 +286,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 5th October, 2018 ; 10 P.M (Quiz) <br>
+                            Registration Deadline: 5th October 2018; 6 P.M.<br>
+                            Round 1: 5th October, 2018 ; 10 P.M. (Quiz) <br>
                             Round 2: 6th-8th October, 2018<br>
                             Round 3: 26th-27th October, 2018 <br>
                             CONTACT:<br>
@@ -317,6 +323,7 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
+                            Registration Deadline: 5th October 2018<br>
                             Round 1: 5th October, 2018 EOD <br>
                             Round 2: 26th-27th October, 2018 <br>
                             CONTACT: <br>
@@ -353,7 +360,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 5th October, 2018<br>
+                            Registration Deadline: 8th October 2018<br>
+                            Round 1: 9th October, 2018<br>
                             Round 2: 26th-27th October, 2018<br>
                             CONTACT:<br> Vaibhavi Parvatikar-8866055311 <br>Soumya Malhotra- 9456512252<br>zeitgiest@iimshillong.ac.in<br>
                             <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "coupdegrace"; ?>">Register here</a>
@@ -388,7 +396,8 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Round 1: 9th October, 2018<br>
+                            Registration Deadline: 9th October 2018<br>
+                            Round 1: 10th October, 2018<br>
                             Round 2: 26th October, 2018<br>
                             CONTACT: <br>
                             Pankhuri Saxena - 8959208778<br>Sushain Bhat - 8825050236<br>toastmasters.iims@iimshillong.ac.in<br>

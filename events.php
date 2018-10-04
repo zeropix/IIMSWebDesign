@@ -173,9 +173,9 @@
                             - Accommodation and Food would be provided<br>
                             - Travelling expenses upto Rs. 3000 per team will be reimbursed<br>
                             TIMELINE:<br>
-                            Registration Deadline: 3rd October 2018<br>
-                            Round 1: 3rd October 2018<br>
-                            Round 2: 8th October 2018<br>
+                            Registration Deadline: 6th October 2018<br>
+                            Round 1: 7th October 2018<br>
+                            Round 2: 8th-12th October 2018<br>
                             Round 3: 26th-27th October 2018<br>
                             CONTACT: <br>
                             Akash Dwivedi -8192921333<br>Vanya Nigam - 6393201546<br>ecobiz@iimshillong.ac.in<br>

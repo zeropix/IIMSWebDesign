@@ -106,7 +106,7 @@
                                 Round 2: 26th-27th October 2018<br>
                                 CONTACT: <br>
                                 Shashank Gontia-9871274735<br>Nikita Kare-9637008337<br>bitesys@iimshillong.ac.in<br>
-                                <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "justbidit"; ?>">Register here</a>
+                                <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php # echo "justbidit"; ?>">Register here</a> -->
                             
                              </div>
                         <div class="col-md-6 col-12">
@@ -141,7 +141,7 @@
                                 Round 1: 9th October 2018<br>
                                 Round 2: 26th-27th October 2018<br>
                             CONTACT:<br> Aniket Upadhyay - 8557992374<br>Adarsh Rajput - 9113669904<br>conquest@iimshillong.ac.in<br>
-                                <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "corona"; ?>">Register here</a>
+                                <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php# echo "corona"; ?>">Register here</a> -->
                             
                             </div>
                         <div class="col-md-6 col-12">
@@ -179,7 +179,7 @@
                             Round 3: 26th-27th October 2018<br>
                             CONTACT: <br>
                             Akash Dwivedi -8192921333<br>Vanya Nigam - 6393201546<br>ecobiz@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "supernova"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "supernova"; ?>">Register here</a> -->
                             
                             </div>
                     <div class="col-md-6 col-12">
@@ -216,7 +216,7 @@
                             Round 2: 26th-27th October 2018<br>
                             CONTACT: <br>
                             Kratgya Gupta-9825412637<br>Gaurav Lakhani-8762732362<br>marketingclub@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "touchstone"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "touchstone"; ?>">Register here</a> -->
                             
                             </div>
                     <div class="col-md-6 col-12">
@@ -253,7 +253,7 @@
                             Round 2 : 26th-27th October<br>
                             CONTACT: <br>
                             Rajat Magotra-8447654372<br>Vinti Singla-9467850831<br>financeclub@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "delfinus"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "delfinus"; ?>">Register here</a> -->
                         
                             </div>
                     <div class="col-md-6 col-12">
@@ -292,7 +292,7 @@
                             Round 3: 26th-27th October, 2018 <br>
                             CONTACT:<br>
                             Ameya poyarekar - 9987871317<br>Shivang Gupta - 76658 93386<br>ushr@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "enthral"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="results/enthral.php">Results</a> -->
                             
                         </div>
                     <div class="col-md-6 col-12" >
@@ -328,7 +328,7 @@
                             Round 2: 26th-27th October, 2018 <br>
                             CONTACT: <br>
                             Bhawesh Bhandari- 8210178940<br>Alisha Shaw- 9007188140<br>opsclub@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "shrinkhala"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "shrinkhala"; ?>">Register here</a> -->
                             </div>
                     <div class="col-md-6 col-12">
                     <img class="pl150"  height="350px" src="assets/img/posters/opera.png" alt="event_brochure">
@@ -364,7 +364,7 @@
                             Round 1: 9th October, 2018<br>
                             Round 2: 26th-27th October, 2018<br>
                             CONTACT:<br> Vaibhavi Parvatikar-8866055311 <br>Soumya Malhotra- 9456512252<br>zeitgiest@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "coupdegrace"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "coupdegrace"; ?>">Register here</a> -->
                         
                             </div>
                     <div class="col-md-6 col-12">
@@ -401,7 +401,7 @@
                             Round 2: 26th October, 2018<br>
                             CONTACT: <br>
                             Pankhuri Saxena - 8959208778<br>Sushain Bhat - 8825050236<br>toastmasters.iims@iimshillong.ac.in<br>
-                            <a class="readmore_btn" target="_blank" href="register.php?event=<?php echo "speakerazzi"; ?>">Register here</a>
+                            <!-- <a class="readmore_btn" target="_blank" href="register.php?event=<?php #echo "speakerazzi"; ?>">Register here</a> -->
                         
                             </div>
                     <div class="col-md-6 col-12">

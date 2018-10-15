@@ -92,7 +92,7 @@
                                 <?php echo ((floor($rowcount/50)+1)*50) + $rowcount; ?> Registrations
                             </p>
                             <a href="events.php" class=" btn btn-primary btn-rounded" >
-                                Register Now
+                                Results
                             </a>
                         </div>
                     </div>

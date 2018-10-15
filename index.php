@@ -357,10 +357,10 @@
              <div class="brand_item text-center">
                 <img src="assets/img/brands/ubi.png" alt="brand">
             </div>
-            <!--<div class="brand_item text-center">
-                <img src="assets/img/brands/b4.png" alt="brand">
-            </div>
             <div class="brand_item text-center">
+                <img src="assets/img/brands/slice.png" alt="brand">
+            </div>
+            <!--<div class="brand_item text-center">
                 <img src="assets/img/brands/b5.png" alt="brand">
             </div> -->
             
